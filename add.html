@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
+         <title>線上購物</title>
+     </head>
+     <body>
+         <h1 align = "center">線上購物</h1>
+         <div style = "margin-left:30%; margin-top:20px;">
+             <ul style = "float:left; margin-left:30px; font-size:20px;">
+                 <li><a href = "menu.php">首頁</a></li>
+             </ul>
+             <ul style = "float:left; margin-left:30px; font-size:20px;">
+                 <li><a href = "add.html">增加商品</a></li>
+            </ul>
+             <ul style = "float:left; margin-left:30px; font-size:20px;">
+                 <li><a href = "search.php">訂單管理</a></li>
+             </ul>
+         </div>
+         <div style = "margin-top:8% ; margin-left:35% ;">
+             <form style = "margin-top:10px" action = "add.php" method = "POST" enctype="multipart/form-data">
+                 商品名稱:<input name = "cname"  type = "text" size = "40"><br/><br/>
+                 價格:<input name = "cprice" type = "text" size = "10">元<br/><br/>
+                 縮圖上傳:<input type = "file" name = "file"><br/>
+                 <p>檔案限制'jpg', 'jpeg', 'png', 'pdf'</p>
+                 <br/>
+                 <input type = "submit" name = "submit" value = "上傳" style = "margin-left:10%; font-size:16px">
+             </form>
+         </div>
+     </body>
+ </html>            
+
